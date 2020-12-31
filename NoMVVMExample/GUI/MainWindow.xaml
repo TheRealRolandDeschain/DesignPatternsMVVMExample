@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="No MVVM Example" Height="450" Width="800">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+
+
+        <Button Grid.Row="0" Grid.Column="1" Name="LoadStudentsButton" Content="Load Students" Margin="20"/>
+        <Button Grid.Row="0" Grid.Column="2" Name="AddStudentButton" Content="Add Student" Margin="20"/>
+        <Button Grid.Row="0" Grid.Column="3" Name="RemoveSutdentButton" Content="Remove Student" Margin="20"/>
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="5" Name="StudentList" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" />
+                <DataGridTextColumn Header="First Name" />
+                <DataGridTextColumn Header="Last Name" />
+                <DataGridTextColumn Header="Adress" />
+                <DataGridTextColumn Header="Age" />
+                <DataGridTextColumn Header="StudentFee" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
