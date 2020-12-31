@@ -10,7 +10,7 @@ namespace MVVMExample.Model
         private string lastName;
         private uint age;
         private string adress;
-        private string email;
+        private decimal studentFee;
         #endregion
 
         #region Public Properties
@@ -44,10 +44,10 @@ namespace MVVMExample.Model
             set { SetProperty<string>(ref adress, value); }
         }
 
-        public string Email
+        public decimal StudentFee
         {
-            get { return email; }
-            set { SetProperty<string>(ref email, value); }
+            get { return studentFee; }
+            set { SetProperty<decimal>(ref studentFee, value); }
         }
         #endregion
 

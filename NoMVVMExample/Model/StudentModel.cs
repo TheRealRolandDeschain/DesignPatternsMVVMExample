@@ -11,7 +11,7 @@
         public string LastName { get; set; }
         public uint Age { get; set; }
         public string Adress { get; set; }
-        public string Email { get; set; }
+        public decimal StudentFee { get; set; }
         #endregion
 
         #region Constructors
