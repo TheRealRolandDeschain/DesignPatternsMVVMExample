@@ -1,5 +1,6 @@
 ﻿namespace MVVMExample.Model
 {
+    
     public class StudentModel
     {
         #region Private Fields
@@ -15,6 +16,17 @@
         #endregion
 
         #region Constructors
+        public StudentModel() { }
+
+        public StudentModel(long _id, string _firstname, string _lastname, string _adress, uint _age, decimal _studentfee)
+        {
+            ID = _id;
+            FirstName = _firstname;
+            LastName = _lastname;
+            Adress = _adress;
+            Age = _age;
+            StudentFee = _studentfee;
+        }
         #endregion
 
         #region Private Methods

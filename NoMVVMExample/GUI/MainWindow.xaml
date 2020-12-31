@@ -13,6 +13,7 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -20,18 +21,19 @@
             <RowDefinition Height="4*" />
         </Grid.RowDefinitions>
 
-
-        <Button Grid.Row="0" Grid.Column="1" Name="LoadStudentsButton" Content="Load Students" Margin="20"/>
-        <Button Grid.Row="0" Grid.Column="2" Name="AddStudentButton" Content="Add Student" Margin="20"/>
-        <Button Grid.Row="0" Grid.Column="3" Name="RemoveSutdentButton" Content="Remove Student" Margin="20"/>
-        <DataGrid Grid.Row="1" Grid.ColumnSpan="5" Name="StudentList" >
+        <Button Grid.Row="0" Grid.Column="1" Name="AddStudentButton" Content="Add Student" Margin="20" Click="AddStudentButton_Click"/>
+        <Button Grid.Row="0" Grid.Column="2" Name="RemoveSutdentButton" Content="Remove Student" Margin="20" Click="RemoveSutdentButton_Click"/>
+        <Button Grid.Row="0" Grid.Column="3" Name="LoadStudentsButton" Content="Load Students" Margin="20" Click="LoadStudentsButton_Click"/>
+        <Button Grid.Row="0" Grid.Column="4" Name="SaveStudentsButton" Content="Save Students" Margin="20" Click="SaveStudentsButton_Click"/>
+        
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="6" Name="dgStudentList" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" />
-                <DataGridTextColumn Header="First Name" />
-                <DataGridTextColumn Header="Last Name" />
-                <DataGridTextColumn Header="Adress" />
-                <DataGridTextColumn Header="Age" />
-                <DataGridTextColumn Header="StudentFee" />
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" />
+                <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                <DataGridTextColumn Header="Adress" Binding="{Binding Adress}" />
+                <DataGridTextColumn Header="Age" Binding="{Binding Age}" />
+                <DataGridTextColumn Header="StudentFee" Binding="{Binding StudentFee}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
