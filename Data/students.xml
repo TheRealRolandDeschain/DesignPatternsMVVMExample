@@ -4,24 +4,16 @@
     <ID>0</ID>
     <FirstName>John</FirstName>
     <LastName>Doe</LastName>
-    <Age>22</Age>
     <Adress>Wyoming</Adress>
+    <Age>22</Age>
     <StudentFee>20000</StudentFee>
   </StudentModel>
   <StudentModel>
     <ID>1</ID>
     <FirstName>Jane</FirstName>
     <LastName>Doe</LastName>
-    <Age>21</Age>
     <Adress>New York</Adress>
+    <Age>21</Age>
     <StudentFee>999999</StudentFee>
-  </StudentModel>
-  <StudentModel>
-    <ID>2</ID>
-    <FirstName>Please Enter First Name</FirstName>
-    <LastName>Please Enter Last Name</LastName>
-    <Age>99</Age>
-    <Adress>Please Enter Adress</Adress>
-    <StudentFee>0</StudentFee>
   </StudentModel>
 </ArrayOfStudentModel>

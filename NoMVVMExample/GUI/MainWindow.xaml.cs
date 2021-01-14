@@ -41,10 +41,10 @@ namespace NoMVVMExample.View
 
             list.Add(new StudentModel(
                 firstAvailable,
-                "Please Enter First Name",
-                "Please Enter Last Name",
-                "Please Enter Adress",
-                99,
+                "[Enter First Name]",
+                "[Enter Last Name]",
+                "[Enter Adress]",
+                0,
                 0
                 ));
         }
