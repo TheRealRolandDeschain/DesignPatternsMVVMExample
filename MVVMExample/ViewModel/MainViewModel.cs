@@ -117,7 +117,7 @@ namespace MVVMExample.ViewModel
                 "[Enter Last Name]",
                 "[Enter Adress]",
                 0,
-                0
+                0M
                 ));
             SaveStudentsButtonEnabled = true;
         }

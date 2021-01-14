@@ -33,7 +33,7 @@
                 <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
                 <DataGridTextColumn Header="Adress" Binding="{Binding Adress}" />
                 <DataGridTextColumn Header="Age" Binding="{Binding Age}" />
-                <DataGridTextColumn Header="StudentFee" Binding="{Binding StudentFee}" />
+                <DataGridTextColumn Header="StudentFee" Binding="{Binding StudentFee, StringFormat=C}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
