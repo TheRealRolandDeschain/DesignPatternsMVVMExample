@@ -5,7 +5,7 @@ namespace MVVMExample.Model
     public class StudentModel : ViewModelBase
     {
         #region Private Fields
-        private long id;
+        private int id;
         private string firstName;
         private string lastName;
         private uint age;
@@ -14,10 +14,10 @@ namespace MVVMExample.Model
         #endregion
 
         #region Public Properties
-        public long ID 
+        public int ID 
         { 
             get { return id; }
-            set { SetProperty<long>(ref id, value); }
+            set { SetProperty<int>(ref id, value); }
         }
 
         public string FirstName
@@ -52,6 +52,17 @@ namespace MVVMExample.Model
         #endregion
 
         #region Constructors
+        public StudentModel() { }
+
+        public StudentModel(int _id, string _firstname, string _lastname, string _adress, uint _age, decimal _studentfee)
+        {
+            ID = _id;
+            FirstName = _firstname;
+            LastName = _lastname;
+            Adress = _adress;
+            Age = _age;
+            StudentFee = _studentfee;
+        }
         #endregion
 
         #region Private Methods

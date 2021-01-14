@@ -7,7 +7,7 @@
         #endregion
 
         #region Public Properties
-        public long ID { get; set; }
+        public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Adress { get; set; }
@@ -18,7 +18,7 @@
         #region Constructors
         public StudentModel() { }
 
-        public StudentModel(long _id, string _firstname, string _lastname, string _adress, uint _age, decimal _studentfee)
+        public StudentModel(int _id, string _firstname, string _lastname, string _adress, uint _age, decimal _studentfee)
         {
             ID = _id;
             FirstName = _firstname;

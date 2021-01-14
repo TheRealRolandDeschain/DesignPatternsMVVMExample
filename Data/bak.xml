@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfStudentModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StudentModel>
+    <ID>0</ID>
+    <FirstName>John</FirstName>
+    <LastName>Doe</LastName>
+    <Adress>Wyoming</Adress>
+    <Age>22</Age>
+    <StudentFee>20000</StudentFee>
+  </StudentModel>
+  <StudentModel>
+    <ID>1</ID>
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <Adress>New York</Adress>
+    <Age>21</Age>
+    <StudentFee>999999</StudentFee>
+  </StudentModel>
+  <StudentModel>
+    <ID>3</ID>
+    <FirstName>Donald</FirstName>
+    <LastName>Trump</LastName>
+    <Adress>Soon not the white house</Adress>
+    <Age>75</Age>
+    <StudentFee>0</StudentFee>
+  </StudentModel>
+</ArrayOfStudentModel>
